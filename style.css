@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*-- General --*/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Makes html and body full width and height,
+removes margin and padding,
+and letters are type Poppins from san-serif family */
+
+input:focus,
+.form-control:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* Remove that blue thing that appears around
+inputs and buttons when they are clicked */
+
+
+
+
+
+/*-- Navigation --*/
+#nav-bar .navbar-nav li {
+    padding-right: 50px;
+}
+/* Create padding right from 
+home, about us, testimonials, contact us and sign in */
+
+#nav-bar .nav-link {
+    font-size: 1.1em ;
+    color: pink;
+}/* Make size of letters 1.1em and color pink */
+
+#nav-bar .nav-link:hover {
+    color: red;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* When home and the others hover smoothly becomes red */
+
+#nav-bar .navbar-brand img {
+    width: 100px;
+    height: 75px;
+}/* Width and height of logo */
+
+
+
+
+
+/*-- Carousel --*/
+#slides .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}/* Carousel image full width an height */
+
+#slides .carousel-caption {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+}/* Caption at center of image */
+
+#slides .carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}/* Makes caption h1 bigger, letters uppercase and put some shadow */
+  
+#slides .carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+}/* Makes caption h3 bigger, letters uppercase and put some shadow */
+
+#slides .carousel-indicators li {
+    background: white;
+}/* When indicators arent active bgcolor is red */
+
+#slides .carousel-indicators li.active {
+    background: red;
+}/* When indicators are active bgcolor is red */ 
+
+
+
+
+
+/*-- About --*/
+#about {
+    margin: 50px 0px;
+}/* Put some padding up and down */
+
+#about h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#about .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0;
+    margin-top: 50px; 
+}/* Put some margin in button, makes bg transparent, border red, letters black */
+
+#about .btn:hover {
+    background: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover bg becomes red and letters becomes white smootly */
+
+
+
+
+
+/*-- Testimonials --*/
+#testimonials {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+    url(Images/fixed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0px;
+    color: white;
+}/* Makes bg image fixed, put some padding up down and makes letters white */
+
+#testimonials h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#testimonials .carousel .item {	
+	font-size: 14px;
+    text-align: center;
+}/* Makes letters 14px and put them on center */
+
+#testimonials .carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 2px solid red;
+	border-radius: 50%;
+}/* The image box is at center with red border and is a circle */
+
+#testimonials .carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}/* The image at full width and height on image box and is a circle */
+
+#testimonials .carousel .testimonial {
+	padding: 30px 0px 10px;
+}/* Put some padding up, right, down */
+
+#testimonials .carousel .overview {	
+	font-style: italic;
+}/* Makes subject italic */
+
+#testimonials .carousel .overview b {
+	text-transform: uppercase;
+	color: red;
+}/* Makes name uppercase and red */
+
+#testimonials .carousel .carousel-indicators {
+	bottom: -40px;
+}/* Puts indicators under name and subject */
+
+#testimonials .carousel-indicators li,
+#testimonials .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}/* Makes indicators circle and put some margin */
+
+#testimonials .carousel-indicators li {	
+	background: white;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}/* The color of non active indicator is white, with no border and some shadow */
+
+#testimonials .carousel-indicators li.active {	
+	background: red;
+}/* The color of active indicator is red */
+
+
+
+
+
+/*-- Contact --*/
+#contact {
+    padding: 50px 0px;
+}/* Put some padding up and down */
+
+#contact h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#contact .follow {
+    padding: 10px;
+    margin: 15px;
+}/* Put some margin and some padding on information */
+
+#contact .contact-info .fa {
+    margin: 10px;
+    color: red;
+    font-weight: bold;
+}/* Puts some margin on fontawesome icons, makes them red and bold */
+
+#contact .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0; 
+}/* Create transparent button with red border and black letters */
+
+#contact .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+#contact .contact-form {
+    padding: 15px;
+}/* Put some padding on input fields */
+
+#contact .modal-header,
+#contact .modal-footer {
+    border-color: red;
+}/* Makes the borders up and down in modal red */
+
+#contact .form-control {
+    border-radius: 0;
+    outline: none !important;    
+}/* Makes inputs inside modal with pointed corners*/
+
+#contact ::placeholder {
+    color: grey;
+}/* Makes the placeholders gray color */
+
+#contact .close {
+    color: red; 
+    opacity: 1;
+    text-shadow: none;
+}/* Makes the "x" symbol red with no shadow */
+
+#contact .close:hover {
+    color: black;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover makes the "x" symbol black smoothly */
+
+
+
+
+
+/*-- Sign In --*/
+#sign-in {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+    url(Images/fixed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0px;
+    color: white;
+}/* Makes bg image fixed, put some padding up down and makes letters white */
+
+#sign-in h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#sign-in .sub-heading .btn {
+    background: transparent;
+    border-color: red;
+    color: white;
+    border-radius: 0;
+    margin-top: 50px;  
+}/* Create transparent button with red border and white letters */
+
+#sign-in .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0; 
+}/* Create transparent button with red border and black letters */
+
+#sign-in .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+#sign-in .contact-form {
+    padding: 15px;
+}/* Put some padding on input fields */
+
+#sign-in .modal-header,
+#sign-in .modal-footer {
+    border-color: red;
+    color: black;
+}/* Makes the borders up and down in modal red and the letters black */
+
+#sign-in .form-control {
+    border-radius: 0;    
+}/* Makes inputs inside modal with pointed corners*/
+
+#sign-in ::placeholder {
+    color: gray;
+}/* Makes the placeholders gray color */
+
+#sign-in .close {
+    color: red; 
+    opacity: 1;
+    text-shadow: none;
+}/* Makes the "x" symbol red with no shadow */
+
+#sign-in .close:hover {
+    color: black;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover makes the "x" symbol black smoothly */
+
+
+
+
+
+/*--Footer--*/
+#footer {
+    /* background: #333;
+    color: white; */
+    padding: 10px 10px 0px 10px;
+}/* Makes footer bg that darkgrey color, letters color white and padding top right left */
+
+#footer h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#footer .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0; 
+}/* Create transparent button with red border and white letters */
+
+#footer .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+#footer .card {
+    background: none;
+    border: none;
+}/* Makes footer card with no bg no border */
+
+#footer .card-header,
+#footer .card-body {
+    background: none;
+    border: none;
+    
+}/* Makes footer card body and header with no bg no border */
+
+#footer p {
+    margin: 10px;
+}/* Put some margin in p element */
+
+#footer .fa-heart-o {
+    margin: 3px;
+    color: red;
+    font-weight: bold;
+}/* Put some margin in the heart and makes it red */
+
+
+
+
+
+/*--Team Members--*/
+#team {
+    padding: 60px 0px;
+}/* Put some padding up and down */
+
+#team h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#team .profile-pic {
+    margin-top: 25px;
+}/* Put some margin on top of div that contains image box */
+
+#team .profile-pic .img-box {
+    /* opacity: 1;
+    display: block; */
+    position: relative;
+}/* Makes icons stay inside of images */
+
+#team .profile-pic .img-box img {
+    filter: grayscale(1);
+}/* Makes image that grey color */
+
+#team .profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}/* On hover makes it looks normal */
+
+#team .profile-pic h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: red;
+}/* The name has 22px red bold letters, and has some margin on top */
+
+#team .profile-pic h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: red;
+}/* The subject has 15px red bold letters, and has some margin on top */
+
+#team .fa {
+    width: 25px;
+    height: 25px;
+    color: red;
+    background: white;
+    padding: 4px;
+    border-radius: 50%;
+}/* Makes the fontawesome icons circle, with red color, white bg and some padding */
+
+#team .img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}/* Makes fb, insta, twitter icon stay invisible at center */
+
+#team .img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}/* Put some paddind between fb, insta and twitter and sow them side by side */
+
+#team .img-box:hover ul {
+    opacity: 1;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover makes fb, insta, twitter smootly visible */
+
+#team p {
+    border: 1px solid red;
+}/* Creates red border around p */
+
+#team p:hover {
+    box-shadow: 0 2px 20px #333;
+    font-weight: bold;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover p gets some box shadow and letters become bold smootly */
+
+#team .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0;
+    margin-top: 50px; 
+}/* Create transparent button with red border and black letters */
+
+#team .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+
+
+
+
+/*-- FAQ --*/
+#faq {
+    padding: 60px 0px;
+}/* Put some padding up and down */
+
+#faq h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#faq .card {
+    background: none;
+    border: none;
+}/* Makes footer card with no bg no border */
+
+#faq .card-header,
+#faq .card-body {
+    background: none;
+    border: none;    
+}/* Makes footer card body and header with no bg no border */
+
+#faq .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0;
+    margin-top: 50px; 
+}/* Create transparent button with red border and black letters */
+
+#faq .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+
+
+
+
+/*-- BMI --*/
+#bmi {
+    padding: 60px 0px;
+}/* Put some padding up and down */
+
+#bmi h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#bmi .red{
+    background-color: red;
+    color: white;    
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* Make the named rows and cols red with white letters */
+
+#bmi .pink{
+    background-color: pink;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* A class that shows us smoothly the result via jQuery */
+
+#bmi .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0;
+}/* Create transparent button with red border and black letters */
+
+#bmi .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+#bmi ::placeholder {
+    color: gray;
+}/* Makes the placeholder color grey */
+
+#bmi #result {
+    color: red;
+}/* Make result letters red */
+
+
+
+
+
+/*-- Articles --*/
+#media {
+    padding: 60px 0px;
+}/* Put some padding up and down */
+
+#media h2::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}/* Create that red line after h2 */
+
+#media h4 {
+    color: red;
+}/* Make the title of media red */
+
+#media img {
+    width: 160px;
+    height: 100px;
+    margin: 10px;    
+}/* Put some margin in image */
+
+#media img {
+    filter: grayscale(1);
+}/* Makes the image that grey color */
+
+#media img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover make the image its normal color */
+
+#media .media-body {
+    border: 1px solid red;
+    margin: 10px;  
+}/* Put red border and some margin around the text */
+
+#media .media-body:hover {
+    box-shadow: 0 2px 20px #333;
+    font-weight: bold;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* O hover put box shadow and makes letters bold */
+
+#media .btn {
+    background: transparent;
+    border-color: red;
+    color: black;
+    border-radius: 0; 
+}/* Create transparent button with red border and black letters */
+
+#media .btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}/* On hover the button smoothly gets red bg and white letters */
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    #slides .carousel-caption h1 {
+        font-size: 450%;
+    }/* Makes carousel h1 letters smaller */
+
+    #slides .carousel-caption h3 {
+        font-size: 170%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }/* Makes carousel h3 letters smaller and boldness less bold */    
+}/* Make these changes on screens 992px or less */
+
+@media (max-width: 768px) {
+    #slides .carousel-caption h1 {
+        font-size: 350%;
+    }/* Makes carousel h1 letters even smaller */
+
+    #slides .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }/* Makes carousel h3 letters even smaller and boldness even less bold */
+}/* Make these changes on screens 768px or less */
+
+@media (max-width: 576px) {
+    #slides .carousel-caption h1 {
+        font-size: 250%;
+    }/* Makes carousel h1 letters even even smaller */
+
+    #slides .carousel-caption h3 {
+        font-size: 110%;
+    }/* Makes carousel h3 letters even even smaller and boldness even even less bold */
+
+    #slides .carousel-indicators {
+        display: none;
+    }/* Show no indicators */
+}/* Make these changes on screens 576px or less */
